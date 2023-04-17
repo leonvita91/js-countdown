@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+
+}
+
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body{
+  font-family: 'TmonMonsori';
+  color: #fff;
+  text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.box{
+  justify-content: center;
+  align-items: center;
+}
+.box span{
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+}
+@keyframes bounce{
+  100%{
+    top: -20px;
+    text-shadow: 0 1px #ccc, 
+                 0 2px #ccc, 
+                 0 3px #ccc, 
+                 0 4px #ccc, 
+                 0 5px #ccc,
+                 0 6px #ccc, 
+                 0 7px #ccc, 
+                 0 8px #ccc, 
+                 0 9px #ccc, 
+                 0 50px 25px rgba(0, 0, 0, 0.2);
+}
+}
+.box span:nth-child(1){
+    animation-delay:1s;
+}
+.box span:nth-child(2){
+    animation-delay:2s;
+}
+.box span:nth-child(3){
+    animation-delay:3s;
+}
+.box span:nth-child(4){
+    animation-delay:4s;
+}
+.box span:nth-child(5){
+    animation-delay:5s;
+}
+.box span:nth-child(6){
+    animation-delay:6s;
+}
+.box span:nth-child(7){
+    animation-delay:7s;
+}
+.box span:nth-child(8){
+    animation-delay:8s;
+}
+.box span:nth-child(9){
+    animation-delay:9s;
+}
+.box span:nth-child(10){
+    animation-delay:10s;
+}
+
+
+
+html { 
+    background: url(/happy_eid/img/eid.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* greetings headline */
+.greetings {
+    display: flex;
+    place-content: start;
+    margin-left: 6em;
+}
+
+.greetings h2 {
+    font-size: 5em;
+    font-family:sans-serif;
+    color: #EFF2FE;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+    width: 40%;
+    color: #EFF2FE;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+.countdown h3 {
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 0px #fff, 0 0 3px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC;
+    }
+    to {
+        text-shadow: 0 0 1px #fff, 0 0 2px #EFF2FC, 0 0 3px #EFF2FC, 0 0 4px #EFF2FC, 0 0 5px #EFF2FC, 0 0 6px #EFF2FC, 0 0 7px #EFF2FC;
+    }
+    }
+.container-day,
+.container-hour,
+.container-min,
+.container-seconds {
+    font-size: 2em;
+}
+
+
+/* Media Query on Mobile View-point */
+@media only screen and (max-width: 572px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+        justify-self: start;
+    }
+    
+    html { 
+        background: url(/happy_eid/img/eid.jpeg) no-repeat center center fixed;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .countdown {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .countdown h3 {
+        font-size: medium;
+    }
+}
