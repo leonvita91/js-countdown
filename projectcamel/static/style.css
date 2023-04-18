@@ -69,7 +69,7 @@ body{
 
 
 html { 
-    background: url(/happy_eid/img/eid.jpeg) no-repeat center center fixed; 
+    background: url(/static/img/eid.jpeg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
