@@ -5,34 +5,49 @@ body {
 
 @font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
 
-body{
-  font-family: 'TmonMonsori';
-  color: #fff;
-  text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+body, html {
+    margin: 0;
+    height: 100vh;
 }
+
+
+body {
+    background-image: url("/static/img/eid.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'TmonMonsori';
+    color: #fff;
+    text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
 .box{
-  justify-content: center;
-  align-items: center;
+    margin-left: -0.5em;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+
 .box span{
-  position: relative;
-  top: 20px;
-  display: inline-block;
-  animation: bounce 0.3s ease infinite alternate;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.3s ease infinite alternate;
 }
 @keyframes bounce{
-  100%{
-    top: -20px;
-    text-shadow: 0 1px #ccc, 
-                 0 2px #ccc, 
-                 0 3px #ccc, 
-                 0 4px #ccc, 
-                 0 5px #ccc,
-                 0 6px #ccc, 
-                 0 7px #ccc, 
-                 0 8px #ccc, 
-                 0 9px #ccc, 
-                 0 50px 25px rgba(0, 0, 0, 0.2);
+    100%{
+        top: -20px;
+        text-shadow: 0 1px #ccc, 
+            0 2px #ccc, 
+            0 3px #ccc, 
+            0 4px #ccc, 
+            0 5px #ccc,
+            0 6px #ccc, 
+            0 7px #ccc, 
+            0 8px #ccc, 
+            0 9px #ccc, 
+            0 50px 25px rgba(0, 0, 0, 0.2);
 }
 }
 .box span:nth-child(1){
@@ -67,17 +82,6 @@ body{
 }
 
 
-
-html { 
-    background: url(/static/img/eid.jpeg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
-
 /* greetings headline */
 .greetings {
     display: flex;
@@ -101,7 +105,9 @@ html {
 
 .countdown {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 50px;
+
 }
 
 .countdown h3 {
@@ -134,17 +140,28 @@ html {
         flex-direction: column;
         font-size: x-large;
         justify-self: start;
+        gap: 0px;
+    }
+    body, html {
+        margin: 0;
+        height: 100vh;
     }
     
-    html { 
-        background: url(/happy_eid/img/eid.jpeg) no-repeat center center fixed;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+    body {
+        background-image: url("/static/img/eid.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
+        font-family: 'TmonMonsori';
+        color: #fff;
+        text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
     }
+    
     .countdown {
+        display: flex;
         flex-direction: column;
-        gap: 0px;
+        margin: 0;
+        }
     }
 
     .countdown h3 {
