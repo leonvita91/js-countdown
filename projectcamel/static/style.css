@@ -136,15 +136,10 @@ body {
 /* Media Query on Mobile View-point */
 @media only screen and (max-width: 572px) {
     body {
-        margin: 0;
-        height: 100vh;
         background-image: url("/static/img/eid.jpeg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         font-family: 'TmonMonsori';
-        color: #fff;
-        text-shadow: 0 1px #2A4CB8, 0 2px #2A4CB8, 0 3px #2A4CB8, 0 4px #2A4CB8, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+
+        text-shadow: 0 1px #5c78d5, 0 2px #5c78d5, 0 3px #5c78d5, 0 4px #5c78d5, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
     }
     .box {
         color:#2A4CB8;
