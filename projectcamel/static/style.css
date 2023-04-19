@@ -18,7 +18,7 @@ body {
     background-size: cover;
     font-family: 'TmonMonsori';
     color: #fff;
-    text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px #2A4CB8, 0 2px #2A4CB8, 0 3px #2A4CB8, 0 4px #2A4CB8, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .box{
@@ -107,7 +107,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
-
 }
 
 .countdown h3 {
@@ -117,12 +116,13 @@ body {
     animation: glow 2s ease-in-out infinite alternate;
 }
 
+/* glowing */
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 1px #fff, 0 0 0px #fff, 0 0 3px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC;
     }
     to {
-        text-shadow: 0 0 1px #fff, 0 0 2px #EFF2FC, 0 0 3px #EFF2FC, 0 0 4px #EFF2FC, 0 0 5px #EFF2FC, 0 0 6px #EFF2FC, 0 0 7px #EFF2FC;
+        text-shadow: 0 0 1px #2A4CB8, 0 0 2px #2A4CB8, 0 0 3px #2A4CB8, 0 0 4px #2A4CB8, 0 0 5px #2A4CB8, 0 0 6px #2A4CB8, 0 0 7px #2A4CB8;
     }
     }
 .container-day,
@@ -144,20 +144,19 @@ body {
         background-size: cover;
         font-family: 'TmonMonsori';
         color: #fff;
-        text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+        text-shadow: 0 1px #2A4CB8, 0 2px #2A4CB8, 0 3px #2A4CB8, 0 4px #2A4CB8, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
     }
     .box {
+        color:#2A4CB8;
         display: flex;
         flex-direction: row;
         font-size: large;
     }
-    
     .greetings {
         margin: 0;
         display: flex;
         justify-content: center;
     }
-    
     .countdown {
         margin: 0;
         width: 80px;
@@ -165,8 +164,17 @@ body {
         flex-direction: column;
         align-items: center;
         }
-
     .countdown h3 {
         font-size: medium;
+    }
+
+    /* glowing */
+    @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 0px #fff, 0 0 3px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC, 0 0 0px #EFF2FC;
+    }
+    to {
+        text-shadow: 0 0 1px #2A4CB8, 0 0 2px #2A4CB8, 0 0 3px #2A4CB8, 0 0 4px #2A4CB8, 0 0 5px #2A4CB8, 0 0 6px #2A4CB8, 0 0 7px #2A4CB8;
+    }
     }
 }
