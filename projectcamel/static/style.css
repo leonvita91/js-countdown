@@ -135,19 +135,9 @@ body {
 
 /* Media Query on Mobile View-point */
 @media only screen and (max-width: 572px) {
-    .box {
-        display: flex;
-        flex-direction: column;
-        font-size: x-large;
-        justify-self: start;
-        gap: 0px;
-    }
-    body, html {
+    body {
         margin: 0;
         height: 100vh;
-    }
-    
-    body {
         background-image: url("/static/img/eid.jpeg");
         background-position: center;
         background-repeat: no-repeat;
@@ -156,13 +146,25 @@ body {
         color: #fff;
         text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc, 0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
     }
+    .box {
+        display: flex;
+        flex-direction: row;
+        font-size: large;
+    }
+    
+    .greetings {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
     
     .countdown {
+        margin: 0;
+        width: 80px;
         display: flex;
         flex-direction: column;
-        margin: 0;
+        align-items: center;
         }
-    }
 
     .countdown h3 {
         font-size: medium;
